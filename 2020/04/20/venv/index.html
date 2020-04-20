@@ -15,7 +15,7 @@
 <meta property="og:description" content="Some thinking about venv ‘venv’ is used to create a virtual environment, where we can use python seperate from the origianl env.  bin&#x2F;activate is a file used for activating the virtual environment   U">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-20T05:22:47.000Z">
-<meta property="article:modified_time" content="2020-04-20T06:10:29.501Z">
+<meta property="article:modified_time" content="2020-04-20T06:26:38.211Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="jupyter">
 <meta property="article:tag" content="venv">
@@ -175,6 +175,32 @@
 </ul>
 </li>
 <li><p>jupyter notebook –generate-config –allow-root</p>
+</li>
+</ul>
+<h1 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h1><ul>
+<li><p>IF you happen to meet ‘fatal: Could not read from remote repository.’, then probably you have accidentally removed your rsa_key files</p>
+</li>
+<li><p>Solution</p>
+<ul>
+<li><p>set name and email</p>
+<ul>
+<li>git config –global user.name “yourname”</li>
+<li>git config –global user.email “<a href="mailto:your@email.com">your@email.com</a>“</li>
+</ul>
+</li>
+<li><p>comment the line of the target host ip (or remove .ssh/known_hosts)</p>
+</li>
+<li><p>ssh-keygen -t rsa -C ‘your@email.com(填写github对应的邮箱)’</p>
+<ul>
+<li><code>Enter</code> several times</li>
+</ul>
+</li>
+<li><p>Go to github</p>
+<ul>
+<li>create new <code>SSH KEY</code>, and paste the connent in <code>id_rsa.pub</code> into it</li>
+</ul>
+</li>
+</ul>
 </li>
 </ul>
 
