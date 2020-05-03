@@ -15,7 +15,7 @@
 <meta property="og:description" content="Some thinking about venv ‘venv’ is used to create a virtual environment, where we can use python seperate from the origianl env.  bin&#x2F;activate is a file used for activating the virtual environment   U">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-20T05:22:47.000Z">
-<meta property="article:modified_time" content="2020-04-20T06:28:08.158Z">
+<meta property="article:modified_time" content="2020-05-03T13:17:57.565Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="jupyter">
 <meta property="article:tag" content="venv">
@@ -125,6 +125,18 @@
 </ul>
 <a id="more"></a>
 
+<h1 id="Venv-wrapper"><a href="#Venv-wrapper" class="headerlink" title="Venv wrapper"></a>Venv wrapper</h1><ol>
+<li><p>install packages</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install virtualenv</span><br><span class="line">pip install virtualenvwrapper</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>make dir, used for storing venvs &amp; relevant files</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir ~/.virtualenvs</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Modify .bashrc</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi ~/.bashrc</span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> WORKON_HOME=<span class="variable">$HOME</span> (the path to user<span class="string">'s home, not necessarily root) /.virtualenvs  # 所有虚拟环境存储的目录</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">i. use find -name virtualenvwrapper.sh</span></span><br><span class="line"><span class="string">ii. source (path to virtualenvwrapper.sh), which is found in '</span>i<span class="string">'</span></span><br><span class="line"><span class="string">raw: /usr/local/bin/virtualenvwrapper.sh</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"># activate</span></span><br><span class="line"><span class="string">source ~/.bashrc</span></span><br></pre></td></tr></table></figure>
+<p>from <a href="https://blog.csdn.net/qq_19339041/article/details/80045273" target="_blank" rel="noopener">https://blog.csdn.net/qq_19339041/article/details/80045273</a></p>
+</li>
+</ol>
 <h1 id="Ubuntu-apt-get"><a href="#Ubuntu-apt-get" class="headerlink" title="Ubuntu apt-get"></a>Ubuntu apt-get</h1><ul>
 <li><p><code>apt-get update</code> will check what can be updated</p>
 <ul>
@@ -249,7 +261,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/beginner/" rel="tag">beginner</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gitbash/" rel="tag">gitbash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ideas/" rel="tag">ideas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/" rel="tag">pip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/" rel="tag">theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/apt-get/" rel="tag">apt-get</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/beginner/" rel="tag">beginner</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/conda/" rel="tag">conda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/gitbash/" rel="tag">gitbash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ideas/" rel="tag">ideas</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jupyter/" rel="tag">jupyter</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pip/" rel="tag">pip</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/" rel="tag">ssh</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/theme/" rel="tag">theme</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/" rel="tag">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/venv/" rel="tag">venv</a></li></ul>
     </div>
   </div>
 
@@ -259,7 +271,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/beginner/" style="font-size: 10px;">beginner</a> <a href="/tags/conda/" style="font-size: 10px;">conda</a> <a href="/tags/gitbash/" style="font-size: 10px;">gitbash</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/ideas/" style="font-size: 10px;">ideas</a> <a href="/tags/jupyter/" style="font-size: 20px;">jupyter</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/theme/" style="font-size: 10px;">theme</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/venv/" style="font-size: 10px;">venv</a>
+      <a href="/tags/apt-get/" style="font-size: 10px;">apt-get</a> <a href="/tags/beginner/" style="font-size: 10px;">beginner</a> <a href="/tags/conda/" style="font-size: 10px;">conda</a> <a href="/tags/gitbash/" style="font-size: 10px;">gitbash</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/ideas/" style="font-size: 10px;">ideas</a> <a href="/tags/jupyter/" style="font-size: 20px;">jupyter</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pip/" style="font-size: 10px;">pip</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/theme/" style="font-size: 10px;">theme</a> <a href="/tags/ubuntu/" style="font-size: 10px;">ubuntu</a> <a href="/tags/venv/" style="font-size: 10px;">venv</a>
     </div>
   </div>
 
@@ -281,6 +293,10 @@
       <ul>
         
           <li>
+            <a href="/2020/05/03/install-package-without-root/">install-package-without-root</a>
+          </li>
+        
+          <li>
             <a href="/2020/05/03/git-bash/">git-bash</a>
           </li>
         
@@ -294,10 +310,6 @@
         
           <li>
             <a href="/2020/04/16/Ideas/">Ideas</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/11/Jupyter-ssh/">Jupyter-ssh</a>
           </li>
         
       </ul>
